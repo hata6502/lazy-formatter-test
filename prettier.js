@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import fs from "fs"
+import fs from "fs";
 import getStdin from "get-stdin";
 import ignore from "ignore";
 
