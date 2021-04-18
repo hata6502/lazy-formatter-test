@@ -1,0 +1,29 @@
+name: Format
+on:
+  push:
+    branches:
+      - main
+jobs:
+  format:
+    runs-on: ubuntu-20.04
+    steps:
+      - run: git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - run: git config --global user.name "github-actions[bot]"
+
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+      - run: npm install -g npm@7
+      - run: npm ci
+
+      - run: npx prettier --write $(git diff HEAD~1 --diff-filter=AM --name-only)
+
+      - run: |
+          git diff --exit-code || (
+            git add . &&
+            git commit -m "Format by Prettier" &&
+            git push
+          )

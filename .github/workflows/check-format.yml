@@ -1,0 +1,17 @@
+name: Check format
+on:
+  pull_request:
+jobs:
+  check-format:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+      - run: npm install -g npm@7
+      - run: npm install -g lazy-fomatter
+      - run: npm ci
+
+      - run: git fetch origin main
+      - run: lazy-format check $(git diff origin/main --diff-filter=AM --name-only)

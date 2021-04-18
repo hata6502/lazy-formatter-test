@@ -1,6 +1,5 @@
 {
   "formatters": [
-    ["dummy", ""],
     ["*.js", "npx prettier --write"],
     ["*.js", "npx standard --fix"]
   ]
