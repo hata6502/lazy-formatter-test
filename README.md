@@ -21,7 +21,7 @@ standard.js should be formatted by: npx standard --fix
 ```
 
 This is used in the [CI](https://github.com/hata6502/lazy-formatter-test/blob/main/.github/workflows/check-format.yml),
-Please see [this Pull Request](https://github.com/hata6502/lazy-formatter-test/pull/1).
+Please see [this Pull Request](https://github.com/hata6502/lazy-formatter-test/pull/4).
 
 ## Lazy formatter migration
 
