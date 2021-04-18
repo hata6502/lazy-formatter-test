@@ -27,9 +27,11 @@ Please see [this Pull Request](https://github.com/hata6502/lazy-formatter-test/p
 
 When pushed to `main` branch, the changed files are formatted by Prettier.
 By implementing it in [CI](https://github.com/hata6502/lazy-formatter-test/blob/main/.github/workflows/format.yml),
-your project can be lazyly migrated to Prettier.
+your project can be lazyly migrated from Standard to Prettier.
 
 Please see [this commit](https://github.com/hata6502/lazy-formatter-test/commit/1b2b3e5e637bf3409d4469f7690baf5daad469b8).
+
+NOTE: Pull Requests must be **squash merged**.
 
 ## Config
 
