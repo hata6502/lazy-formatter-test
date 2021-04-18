@@ -20,14 +20,16 @@ prettier.js should be formatted by: npx prettier --write
 standard.js should be formatted by: npx standard --fix
 ```
 
-This is used in the [CI](), Please see [this Pull Request]().
+This is used in the [CI](https://github.com/hata6502/lazy-formatter-test/blob/main/.github/workflows/check-format.yml),
+Please see [this Pull Request](https://github.com/hata6502/lazy-formatter-test/pull/1).
 
 ## Lazy formatter migration
 
 When pushed to `main` branch, the changed files are formatted by Prettier.
-By implementing it in [CI](), your project can be lazyly migrated to Prettier.
+By implementing it in [CI](https://github.com/hata6502/lazy-formatter-test/blob/main/.github/workflows/format.yml),
+your project can be lazyly migrated to Prettier.
 
-Please see [this commit]().
+Please see [this commit](https://github.com/hata6502/lazy-formatter-test/commit/1b2b3e5e637bf3409d4469f7690baf5daad469b8).
 
 ## Config
 
