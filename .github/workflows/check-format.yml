@@ -13,5 +13,5 @@ jobs:
       - run: npm install -g lazy-formatter
       - run: npm ci
 
-      - run: git fetch origin main
-      - run: lazy-format check $(git diff origin/main --diff-filter=AM --name-only)
+      - run: git fetch --unshallow origin main
+      - run: lazy-format check $(git diff origin/main... --diff-filter=AM --name-only)
