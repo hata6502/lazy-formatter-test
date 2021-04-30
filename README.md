@@ -31,8 +31,6 @@ your project can be lazyly migrated from Standard to Prettier.
 
 Please see [this commit](https://github.com/hata6502/lazy-formatter-test/commit/1b2b3e5e637bf3409d4469f7690baf5daad469b8).
 
-NOTE: Pull Requests must be **squash merged**.
-
 ## Config
 
 Please see [lazy-formatter.json](https://github.com/hata6502/lazy-formatter-test/blob/main/lazy-formatter.json).
